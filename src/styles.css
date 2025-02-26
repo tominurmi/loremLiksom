@@ -1,0 +1,176 @@
+:root {
+	font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+	font-display: optional;
+	font-size: 68.75%;
+}
+
+html {
+	color: #BEBEBE
+}
+
+body {
+	background: #000;
+	color: #BEBEBE;
+	margin: 0;
+	overflow: hidden;
+}
+
+h2 {
+	text-align: center;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: 2.4px;
+}
+
+label {
+color: #BEBEBE;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: 1.8px;
+}
+
+button {
+	color: #BEBEBE;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+}
+button:hover {
+	color: #fff;
+	transition: color 0.2s;
+}
+button:active {
+	color: #fffab1;
+	font-size: 11px;
+	transition: all 0.1s;
+}
+
+
+.heading {
+	text-align: center;
+	font-size: 8px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logo-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin: 16px 0 16px 0;
+}
+.logo {
+	width: 80px;
+	height: 25px;
+}
+
+#riveCanvas {
+	width: 220px;
+	height: auto;
+	margin: 0 auto 8px auto;
+	border-radius: 12px;
+}
+
+.radios {
+margin-bottom: 24px;
+width: 100%;
+}
+
+.button-container {
+width: 100%;
+height: 75px;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+background-position: center top;
+}
+
+.button {
+border: none;
+background: none;
+cursor: pointer;
+width: 212px;
+height: 52px;
+}
+
+.radio-group {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 0 16px;
+}
+
+.heading::before,
+.heading::after {
+	content: '';
+	height: 1px;
+	width: 55px;
+	background: #616161;
+	position: absolute;
+	top: 5px;
+}
+
+.heading::before {
+	left: calc(43% - 90px);
+}
+
+.heading::after {
+	right: calc(43% - 90px);
+}
+
+.radio-label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 12px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 9px;
+	transition: color 0.2s;
+}
+
+.radio-label:hover {
+	color: #fff;
+}
+
+.radio-label input[type="radio"]:checked ~ * {
+	color: #fffab1;
+	transition: color 0.4s;
+}
+
+.radio-label input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.radio-icon {
+	width: 62px;
+	height: 62px;
+}
+
+.radio-icon.active {
+	display: none;
+}
+
+.radio-label input[type="radio"]:checked ~ .radio-icon.default {
+	display: none;
+}
+
+.radio-label input[type="radio"]:checked ~ .radio-icon.active {
+	display: block;
+}	

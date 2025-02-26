@@ -1,0 +1,47 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "plugma dev",
+		"build": "plugma build",
+		"preview": "plugma preview",
+		"release": "plugma release"
+	},
+	"devDependencies": {
+		"@figma/plugin-typings": "^1.100.2",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@tsconfig/svelte": "^5.0.4",
+		"plugma": "^1.2.4",
+		"svelte": "^5.1.3",
+		"svelte-check": "^4.0.5",
+		"tslib": "^2.8.0",
+		"typescript": "~5.6.2",
+		"vite": "^5.4.10"
+	},
+	"plugma": {
+		"manifest": {
+			"id": "1461312068580622566",
+			"name": "Lorem Liksom",
+			"main": "src/main.ts",
+			"ui": "src/ui.ts",
+			"documentAccess": "dynamic-page",
+			"editorType": [
+				"figma",
+				"figjam"
+			],
+			"networkAccess": {
+				"allowedDomains": [
+					"https://unpkg.com",
+					"https://cdn.jsdelivr.net"
+				],
+				"devAllowedDomains": [
+					"http://localhost:*",
+					"ws://localhost:9001"
+				]
+			}
+		}
+	},
+	"dependencies": {
+		"@rive-app/canvas": "^2.23.11"
+	}
+}
