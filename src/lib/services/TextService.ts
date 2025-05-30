@@ -5,6 +5,7 @@ import { marketplaceTexts } from '../texts/marketplace';
 import { fiveyearoldTexts } from '../texts/fiveyearold';
 import { messagesTexts } from '../texts/messages';
 import { publicsectorTexts } from '../texts/publicsector';
+import { publicsectornynorskTexts } from '../texts/publicsectornynorsk';
 import { sensationalTexts } from '../texts/sensational';
 import type { TextCategory, TextLength, TextCategories } from '../types';
 
@@ -16,6 +17,7 @@ const texts: TextCategories = {
     patientinfo: patientinfoTexts,
     messages: messagesTexts,
     publicsector: publicsectorTexts,
+    publicsectornynorsk: publicsectornynorskTexts,
     sensational: sensationalTexts
 };
 

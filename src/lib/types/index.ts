@@ -7,6 +7,7 @@ export type TextCategory =
     | 'fiveyearold'
     | 'messages'
     | 'publicsector'
+    | 'publicsectornynorsk'
     | 'sensational';
 
 export type TextCollection = Record<TextLength, string[]>;

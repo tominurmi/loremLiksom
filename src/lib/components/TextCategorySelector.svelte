@@ -13,6 +13,7 @@
         { value: 'marketplace', label: 'Markedsplass Ipsum' },
         { value: 'messages', label: 'Melding Ipsum' },
         { value: 'publicsector', label: 'Offentlig sektor Ipsum' },
+        { value: 'publicsectornynorsk', label: 'Offentlig sektor nynorsk Ipsum' },
         { value: 'patientinfo', label: 'Pasientinfo Ipsum' },
         { value: 'sensational', label: 'Sensasjonell Ipsum' }
     ];
